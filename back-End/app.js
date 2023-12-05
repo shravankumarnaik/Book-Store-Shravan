@@ -13,7 +13,8 @@ app.use(express.json())
 app.use(cors())
 
 //mongo DB connnection 
-mongoose.connect(MONGODB_URL).then(()=>{
+mongoose.connect(MONGODB_URL)
+.then(()=>{
     console.log("Data Base connected ...!")
 }).catch((err)=>{
     console.log(err)
