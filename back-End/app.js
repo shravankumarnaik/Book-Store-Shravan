@@ -7,7 +7,7 @@ const app = express()
 const router = require("./routes/book-routes")
 
 const port = process.env.PORT
-const MONGODB_URL = process.env.DATABASE_URL;
+const MONGODB_URL = process.env.DATABASE_URL || "mongodb://127.0.0.1:27017/";
 //middlewares
 app.use(express.json())
 app.use(cors())
