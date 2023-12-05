@@ -21,7 +21,7 @@ const AddBook = () => {
       }))
     }
 const sendRequest = async() =>{
-   await axios.post("http://localhost:4000/books",{
+   await axios.post("https://book-store-rs2q.onrender.com//books",{
         name:String(inputs.name),
         author:String(inputs.author),
         description:String(inputs.description),

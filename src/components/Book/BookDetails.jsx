@@ -11,14 +11,14 @@ const BookDetail = () => {
     const history = useNavigate();
     useEffect(()=>{
         const fetchHandler = async() =>{
-            await axios.get(`http://localhost:4000/books/${id}`)
+            await axios.get(`https://book-store-rs2q.onrender.com//books/${id}`)
             .then(res=>res.data).then(data =>setInputs(data.book))
         }
         fetchHandler();
     },[id])
 
     const sendRequest = async() =>{
-        await axios.put(`http://localhost:4000/books/${id}`,{
+        await axios.put(`https://book-store-rs2q.onrender.com//books/${id}`,{
             name:String(inputs.name),
             author:String(inputs.author),
             description:String(inputs.description),

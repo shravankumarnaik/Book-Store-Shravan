@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Book from "./Book";
 import "./Book.css"
 
-const URL = "http://localhost:4000/books"
+const URL = "https://book-store-rs2q.onrender.com//books"
 
 //fecthHandler Function
 const fetchHandler = async() =>{
